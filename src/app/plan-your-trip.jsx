@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function PlanYourTrip() {
   return (
-    <section className=' mb-16 '>
+    <section className=' mb-16 ' id='plan-your-trip'>
          <h2 className="text-2xl lg:text-4xl flex items-center justify-center mb-4 font-semibold">Plan Your <span className="text-[#00ADB5] ml-2">Dream</span> &nbsp; Trip</h2>
         <p className="text-lg text-gray-600 text-center mb-12">
           <span className="text-[#00ADB5] font-semibold">Your Journey, Our Commitment</span>

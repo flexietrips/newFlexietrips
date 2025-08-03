@@ -15,7 +15,7 @@ export const NAVBAR_CONTENT = [
   },
   {
     name: "Blog",
-    path: "/blog",
+    path: "/blog",  
   },
 ];
 
@@ -74,24 +74,27 @@ export const REVIEWS = [
 
 export const BLOGS = [
   {
-    title: "Top 10 Places to Visit in Bali",
-    date: "August 2, 2025",
-    image: "/assets/images/hero.jpg",
-    onClick: "/blogs/bali-top-10",
+    title: "Breathtaking Landscapes of Ladakh",
+    date: "August 1, 2025",
+    image: "/assets/images/destinations/leh.jpg", // Replace with actual Ladakh image
+    onClick: "/blogs/ladakh-landscapes",
   },
   {
-    title: "The Ultimate Guide to Solo Travel",
-    date: "July 20, 2025",
-    image: "/assets/images/hero.jpg",
-    onClick: "/blogs/solo-travel-guide",
+    title: "Top 7 Places to Explore in Himachal Pradesh",
+    date: "July 22, 2025",
+    image: "/assets/images/destinations/himachal.avif", // Replace with actual Himachal image
+    onClick: "/blogs/himachal-top-places",
   },
   {
-    title: "Hidden Gems of Northern India",
-    date: "June 15, 2025",
-    image: "/assets/images/hero.jpg",
-    onClick: "/blogs/north-india-gems",
+    title: "Exploring the Backwaters of Kerala",
+    date: "June 25, 2025",
+    image: "/assets/images/destinations/kerala.avif", // Replace with actual Kerala image
+    onClick: "/blogs/kerala-backwaters",
   },
+ 
+ 
 ];
+
 
 export const CAROUSEL_IMAGES = [
   {

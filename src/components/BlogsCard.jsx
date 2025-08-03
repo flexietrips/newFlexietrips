@@ -4,21 +4,24 @@ import React from 'react';
 
 export default function BlogsCard({ title, date, onclick, image }) {
   return (
-    <div className="bg-[#F9F9F7] p-4 py-10 rounded-lg shadow-md flex flex-col items-start justify-start gap-4 w-full max-w-sm">
-      <h2 className="text-2xl font-bold text-left h-20 line-clamp-2">{title}</h2>
+    <div className="bg-[#F9F9F7] p-4 py-10 rounded-lg shadow-md flex flex-col items-start justify-between gap-4 w-full max-w-sm h-[550px]">
+      <div className="flex flex-col gap-3">
+        <h2 className="text-2xl font-bold text-left h-20 line-clamp-2">{title}</h2>
 
-      <div className="flex items-center gap-2 text-gray-600">
-        <CalendarDays className="text-gray-500" size={18} />
-        <p>{date}</p>
+        <div className="flex items-center gap-2 text-gray-600">
+          <CalendarDays className="text-gray-500" size={18} />
+          <p>{date}</p>
+        </div>
+
+        <div className="w-full h-[200px] relative">
+          <Image
+            src={image}
+            alt="Blog Image"
+            fill
+            className="rounded-md object-cover"
+          />
+        </div>
       </div>
-
-      <Image
-        src={image}
-        alt="Blog Image"
-        width={400}
-        height={200}
-        className="rounded-md mt-2 w-full object-cover"
-      />
 
       <button
         onClick={onclick}

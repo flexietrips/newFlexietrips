@@ -1,5 +1,6 @@
 "use client";
 import { HERO_MAIN_CONTENT } from "@/data";
+import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
@@ -35,16 +36,17 @@ export default function HeroSection() {
               Way
             </span>
           </h1>
-          <button
-            className="mt-4 sm:mt-6 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base text-white rounded-lg font-semibold hover:scale-105 transition-transform shadow-lg"
-            style={{
-              background:
-                "linear-gradient(to right, #00ADB5 0%, #004C4F 50%, #007C82 100%)",
-              boxShadow: "0 4px 15px rgba(0, 173, 181, 0.5)",
-            }}
-          >
-            Start Travelling
-          </button>
+          <Link
+  href="#plan-your-trip"
+  className="mt-4 sm:mt-6 inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base text-white rounded-lg font-semibold hover:scale-105 transition-transform shadow-lg"
+  style={{
+    background:
+      "linear-gradient(to right, #00ADB5 0%, #004C4F 50%, #007C82 100%)",
+    boxShadow: "0 4px 15px rgba(0, 173, 181, 0.5)",
+  }}
+>
+  Start Travelling
+</Link>
         </div>
       </div>
 

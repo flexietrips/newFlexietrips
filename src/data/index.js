@@ -76,23 +76,21 @@ export const BLOGS = [
   {
     title: "Breathtaking Landscapes of Ladakh",
     date: "August 1, 2025",
-    image: "/assets/images/destinations/leh.jpg", // Replace with actual Ladakh image
+    image: "/assets/images/destinations/leh.jpg", 
     onClick: "/blogs/ladakh-landscapes",
   },
   {
     title: "Top 7 Places to Explore in Himachal Pradesh",
     date: "July 22, 2025",
-    image: "/assets/images/destinations/himachal.avif", // Replace with actual Himachal image
+    image: "/assets/images/destinations/himachal.avif",
     onClick: "/blogs/himachal-top-places",
   },
   {
     title: "Exploring the Backwaters of Kerala",
     date: "June 25, 2025",
-    image: "/assets/images/destinations/kerala.avif", // Replace with actual Kerala image
+    image: "/assets/images/destinations/kerala.avif", 
     onClick: "/blogs/kerala-backwaters",
   },
- 
- 
 ];
 
 

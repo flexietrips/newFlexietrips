@@ -39,10 +39,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link href="/tours" className="hover:text-[#00ADB5]">Tours</Link></li>
-              <li><Link href="/blog" className="hover:text-[#00ADB5]">Blog</Link></li>
-              <li><Link href="/about" className="hover:text-[#00ADB5]">About Us</Link></li>
-              <li><Link href="/itinerary" className="hover:text-[#00ADB5]">Itinerary</Link></li>
+              <li><Link href="#tours" className="hover:text-[#00ADB5]">Tours</Link></li>
+              <li><Link href="#blog" className="hover:text-[#00ADB5]">Blog</Link></li>
+              <li><Link href="#about" className="hover:text-[#00ADB5]">About Us</Link></li>
+              <li><Link href="#itinerary" className="hover:text-[#00ADB5]">Itinerary</Link></li>
             </ul>
           </div>
 
@@ -50,10 +50,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-3">More</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link href="/privacy-policy" className="hover:text-[#00ADB5]">Privacy Policy</Link></li>
-              <li><Link href="/terms-and-conditions" className="hover:text-[#00ADB5]">Terms & Conditions</Link></li>
-              <li><Link href="/faqs" className="hover:text-[#00ADB5]">FAQs</Link></li>
-              <li><Link href="/contact" className="hover:text-[#00ADB5]">Contact Us</Link></li>
+              <li><Link href="/" className="hover:text-[#00ADB5]">Privacy Policy</Link></li>
+              <li><Link href="/" className="hover:text-[#00ADB5]">Terms & Conditions</Link></li>
+              <li><Link href="/" className="hover:text-[#00ADB5]">FAQs</Link></li>
+              <li><Link href="/" className="hover:text-[#00ADB5]">Contact Us</Link></li>
             </ul>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Footer() {
           </p>
           <p className="text-gray-300">GST: 02ADWPG5598A1ZG</p>
           <h4 className="text-lg font-semibold mt-4 mb-2">Bank Details</h4>
-          <p className="text-gray-300">Account Number: 51205472044</p>
+          <p className="text-gray-300">Account Number: 44027450215</p>
           <p className="text-gray-300">IFSC: SBIN0050127</p>
         </div>
       </div>

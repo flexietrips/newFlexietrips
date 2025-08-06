@@ -33,7 +33,7 @@ export default function WhyChoose() {
 
   const translateX = `-${currentIndex * 100}%`;
   return (
-    <section className=" py-16">
+    <section className=" py-16" >
        <h2 className="text-2xl lg:text-4xl flex items-center justify-center mb-4 font-semibold">
         Why to choose <span className="text-[#00ADB5] ml-2">us</span>?
       </h2>

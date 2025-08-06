@@ -7,15 +7,15 @@ export const NAVBAR_CONTENT = [
   },
   {
     name: "Tours",
-    path: "/tours",
+    path: "#tours",
   },
   {
     name: "About",
-    path: "/about",
+    path: "#about",
   },
   {
     name: "Blog",
-    path: "/blog",  
+    path: "#blog",  
   },
 ];
 

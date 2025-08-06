@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Blogs() {
   return (
-    <section>
+    <section id='blog'>
       <h2 className="text-2xl lg:text-4xl mb-4 font-semibold text-center">
         Read Latest
         <span className=' text-[#00ADB5] ml-2'>

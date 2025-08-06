@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Itinerary() {
   return (
-    <section>
+    <section id="tours">
       <h2 className="text-2xl lg:text-4xl flex items-center justify-center mb-4 font-semibold">
         Our
         <span className="text-[#00ADB5] ml-2">Handpicked</span>

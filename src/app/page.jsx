@@ -5,6 +5,8 @@ import Itinerary from "./itenary";
 import Testimonials from "./testimonials";
 import Blogs from "./blogs";
 import PlanYourTrip from "./plan-your-trip";
+import OurDestinations from "./our-destinations";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
       >
         <WhyChoose />
         <Itinerary />
+        <OurDestinations />
         <Testimonials />
+        <About />
         <Blogs />
         <PlanYourTrip />
       </div>

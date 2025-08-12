@@ -10,7 +10,7 @@ import {
 import React from "react";
 
 const data = await fetch(
-  `${process.env.NEXT_PUBLIC_STRAPI_URL}/blogs?populate=* `,
+  "https://lovable-growth-4951fded8b.strapiapp.com/api/blogs?populate=* ",
   { cache: "no-store" }
 );
 const response = await data.json();

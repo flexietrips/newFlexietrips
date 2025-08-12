@@ -1,4 +1,4 @@
-import { Calendar, Star, Users } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export default function CircularCard({ destination, onClick }) {
@@ -8,9 +8,11 @@ export default function CircularCard({ destination, onClick }) {
       onClick={onClick}
     >
       <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden  transform transition-all duration-300  group-hover:shadow-3xl border-2 border-black/20">
-        <img
+        <Image
           src={destination.image}
           alt={destination.name}
+          height={100}
+          width={100}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>

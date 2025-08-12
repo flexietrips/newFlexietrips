@@ -18,7 +18,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { format } from "date-fns";
-import { CalendarIcon, Mail, Phone, User, Users, MapPin } from "lucide-react";
+import { CalendarIcon, Mail, Phone, User, Users, MapPin, Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
@@ -137,8 +137,8 @@ const TravelForm = ({ destination, showMap = true, onClose }) => {
                 Book Your Journey to {destination.name}
               </h3>
               <div className="flex items-center justify-center text-gray-600">
-                <MapPin className="w-4 h-4 mr-2" />
-                <span>{destination.location || destination.name}</span>
+                <Wallet className="w-4 h-4 mr-2" />
+                <span>{destination.price }</span>
               </div>
             </div>
           )}

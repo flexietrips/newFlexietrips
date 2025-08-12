@@ -4,13 +4,21 @@ import { NAVBAR_CONTENT } from "@/data"
 import Image from "next/image"
 import Link from "next/link"
 import React, { useState } from "react"
-import { Menu, X } from "lucide-react" // for hamburger icons
+import { Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  // Check if we are on the homepage
+  const isHomePage = pathname === "/"
 
   return (
-    <header className="absolute top-0 left-0 w-full z-20 bg-transparent">
+    <header
+      className={`top-0 left-0 w-full z-20 transition-all duration-300 
+        ${isHomePage ? "absolute bg-transparent" : "sticky bg-black"}`}
+    >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between text-white py-4">
           {/* Logo */}

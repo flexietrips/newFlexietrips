@@ -5,8 +5,8 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-16 py-16">
-      <div className="flex flex-col md:flex-row justify-between gap-12 text-center md:text-left">
+    <footer className="bg-black text-white px-16 py-16 ">
+      <div className="flex flex-col md:flex-row justify-between gap-12 text-center md:text-left container mx-auto">
         
         {/* Left: Logo & Social Links */}
         <div className="md:w-1/3">
@@ -50,10 +50,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-3">More</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link href="/" className="hover:text-[#00ADB5]">Privacy Policy</Link></li>
-              <li><Link href="/" className="hover:text-[#00ADB5]">Terms & Conditions</Link></li>
-              <li><Link href="/" className="hover:text-[#00ADB5]">FAQs</Link></li>
-              <li><Link href="/" className="hover:text-[#00ADB5]">Contact Us</Link></li>
+              <li><Link href="/privacypolicy" className="hover:text-[#00ADB5]">Privacy Policy</Link></li>
+              <li><Link href="/termsandconditions" className="hover:text-[#00ADB5]">Terms & Conditions</Link></li>
+              <li><Link href="/paymentandcancellation" className="hover:text-[#00ADB5]">Payments and Cancellation</Link></li>
+              <li><Link href="/fraud" className="hover:text-[#00ADB5]">Fraud</Link></li>
             </ul>
           </div>
         </div>

@@ -4,7 +4,7 @@ import React from "react"
 
 export default function CancellationPolicyPage() {
   return (
-    <section className="bg-gray-50 py-12">
+    <main className="bg-gray-50 py-12">
       <div className="container mx-auto ">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#00ADB5] mb-2">
@@ -14,7 +14,7 @@ export default function CancellationPolicyPage() {
           At <span className="font-semibold">FlexiEtrips</span>, we strive to provide transparency in our payment collection and cancellation policies. Please review the terms below for <span className="font-semibold">Short Haul Packages</span> including Domestic Trips, Bhutan, Andaman & Nicobar Islands.
         </p>
 
-        {/* Payment Collection Section */}
+        {/* Payment Collection main */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <h2 className="text-2xl font-bold text-[#00ADB5] mb-4 flex items-center">
             💰 Payment Collection Plan 
@@ -173,7 +173,7 @@ export default function CancellationPolicyPage() {
           />
         </div>
       </div>
-    </section>
+    </main>
   )
 }
 

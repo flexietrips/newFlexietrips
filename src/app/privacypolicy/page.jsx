@@ -4,7 +4,7 @@ import React from "react"
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="bg-gray-50 py-12">
+    <main className="bg-gray-50 py-12">
       <div className="container mx-auto ">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#00ADB5] mb-2">
@@ -132,7 +132,7 @@ export default function PrivacyPolicyPage() {
           />
         </div>
       </div>
-    </section>
+    </main>
   )
 }
 

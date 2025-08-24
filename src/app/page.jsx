@@ -13,7 +13,6 @@ export default function Home() {
     <main className="flex flex-col">
       <HeroSection />
 
-      {/* Wrapper for responsive sections */}
       <div
         className="
           container

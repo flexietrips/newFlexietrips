@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function FraudAlertPage() {
   return (
-    <section className="bg-gray-50 py-12">
+    <main className="bg-gray-50 py-12">
       <div className="container mx-auto">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-red-600 mb-6">
@@ -130,6 +130,6 @@ export default function FraudAlertPage() {
 
         <p className="mt-4 font-semibold text-gray-900">– Team FlexiEtrips.com</p>
       </div>
-    </section>
+    </main>
   )
 }

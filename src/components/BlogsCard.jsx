@@ -1,11 +1,12 @@
 import { formatDateToMonthDay } from '@/utils/dateFormatter';
 import { CalendarDays, MoveRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function BlogsCard({ title, date, onclick, image, description }) {
   return (
-    <div className="bg-[#F9F9F7] p-4 py-8 rounded-lg shadow-md flex flex-col justify-start gap-4 w-full max-w-sm min-h-[520px]">
+    <div className="bg-[#F9F9F7] p-4 py-8 rounded-lg shadow-lg flex flex-col justify-start gap-4 w-full max-w-sm min-h-[520px]">
       <div className="flex flex-col gap-3 flex-grow">
         <h2 className="text-2xl font-bold text-left line-clamp-2">{title}</h2>
 
@@ -28,13 +29,13 @@ export default function BlogsCard({ title, date, onclick, image, description }) 
       </div>
 
       <div>
-        <button
-          onClick={onclick}
-          className="bg-white rounded-full px-4 py-2 shadow-md hover:bg-green-500 hover:text-white transition-colors cursor-pointer flex items-center gap-2"
+        <Link
+          href={onclick}
+          className="bg-white w-40 rounded-full px-4 py-2 shadow-md hover:bg-green-500 hover:text-white transition-colors cursor-pointer flex items-center gap-2"
         >
           Read more
           <MoveRight size={18} />
-        </button>
+        </Link>
       </div>
     </div>
   );

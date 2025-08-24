@@ -78,10 +78,16 @@ const renderRichText = (content) => {
   });
 };
 
+
+
 export default async function Blogs({ params }) {
   const { slug } = await params;
-  const data = await getData(`blogs/${slug}`);
-  const blog = data.data;
+  const data = await fetch(
+    `https://lovable-growth-4951fded8b.strapiapp.com/api/blogs/${slug}?populate=*`,
+    { cache: "no-store" }
+  );
+  const response = await data.json();
+  const blog = response.data;
 
   // Format the published date
   const publishedDate = blog.published ? new Date(blog.published) : null;
@@ -211,7 +217,7 @@ export default async function Blogs({ params }) {
             </div>
 
             {/* Call to Action */}
-            <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white text-center">
+            {/* <div className="mt-12 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white text-center">
               <h3 className="text-2xl font-bold mb-4">Ready for Your Spiritual Journey? 🏔️</h3>
               <p className="mb-6 text-blue-100">
                 Join us for the Holy Yulla Kanda Trek and experience the world's highest Krishna temple.
@@ -224,10 +230,10 @@ export default async function Blogs({ params }) {
                   Contact Us
                 </button>
               </div>
-            </div>
+            </div> */}
 
             {/* Share Section */}
-            <div className="mt-12 pt-8 border-t border-slate-200">
+            {/* <div className="mt-12 pt-8 border-t border-slate-200">
               <h3 className="text-lg font-semibold text-slate-900 mb-4">Share this trek</h3>
               <div className="flex flex-wrap gap-4">
                 <button className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
@@ -249,11 +255,11 @@ export default async function Blogs({ params }) {
                   <span>WhatsApp</span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </article>
 
           {/* Related Treks */}
-          <div className="mt-16">
+          {/* <div className="mt-16">
             <h2 className="text-2xl font-bold text-slate-900 mb-8">More Himalayan Adventures</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -274,7 +280,7 @@ export default async function Blogs({ params }) {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>

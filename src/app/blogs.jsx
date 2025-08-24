@@ -6,12 +6,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getData } from "@/lib/getData";
+// import { BLOGS } from '@/data'
 import React from "react";
 
-export default async function Blogs() {
-  const data = await getData("blogs");
-  console.log('data', data)
+const data = await fetch(
+  "https://lovable-growth-4951fded8b.strapiapp.com/api/blogs?populate=* ",
+  { cache: "no-store" }
+);
+const response = await data.json();
+
+export default function Blogs() {
+  const blogs = response.data;
 
   return (
     <section id="blog">
@@ -29,7 +34,7 @@ export default async function Blogs() {
       </p>
       <Carousel>
         <CarouselContent>
-          {data.data.map((blog, index) => (
+          {blogs.map((blog, index) => (
             <CarouselItem className="md:basis-1/3 lg:basis-1/3" key={index}>
               <BlogsCard
                 title={blog.title}

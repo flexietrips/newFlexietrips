@@ -231,7 +231,7 @@ export default async function Blogs({ params }) {
                 </button>
               </div>
             </div> */}
-
+   
             {/* Share Section */}
             {/* <div className="mt-12 pt-8 border-t border-slate-200">
               <h3 className="text-lg font-semibold text-slate-900 mb-4">Share this trek</h3>
